@@ -1,0 +1,26 @@
+{
+  "name": "ez-require",
+  "version": "1.0.0",
+  "description": "A lightweight lib for requiring modules easily",
+  "author": "yiwei",
+  "keywords": [
+    "require"
+  ],
+  "licenses": [
+    {}
+  ],
+  "dependencies": {
+    "underscore": "^1.5.0"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ychen11/ez-require.git"
+  },
+  "bugs": {},
+  "scripts":  {},
+  "engines": {
+    "node" : ">=0.10.0"
+  }
+}
