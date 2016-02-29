@@ -1,9 +1,12 @@
 var assert = require('assert');
-describe('Array', function() {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal(-1, [1,2,3].indexOf(5));
-      assert.equal(-1, [1,2,3].indexOf(0));
+
+describe('Base', function() {
+  describe('Set Global Path', function () {
+    it('Set global path and get it', function () {
+      var ezReq = require('../');
+      ezReq.setGlobalDir(__dirname);
+      var module = ezReq.globalRequire('/my-module');
+      assert.strictEqual('aaa', module.a);
     });
   });
 });
