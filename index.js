@@ -14,6 +14,7 @@ exports.setGlobalDir = function (path) {
   Root.globalDir = path;
 };
 
+
 /**
  * ezrequire function
  * @param {String} path the partial path from global dir to current file.
@@ -46,7 +47,7 @@ exports.setLocalRoot = function (name, path) {
  */
 exports.localRequire = function (name, dir) {
   if (!Root.localDirs[name]) {
-    throw new Error('Local directory not set' + name);
+    throw new Error('Local directory not set: ' + name);
   }
 
   return require(Root.localDirs[name] + dir);
