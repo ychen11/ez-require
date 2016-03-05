@@ -11,7 +11,7 @@
      └─ E.js
 ```
 If you want to require F.js in H.js, usually you have to require like this:``` var f = require('../../B/F');```
-Couting the directory level will kill you if you have a really deep path.
+Counting the directory level will kill you if you have a really deep path.
 
 This tiny tool may solve your problem, somehow :)
 
