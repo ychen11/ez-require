@@ -40,4 +40,13 @@ describe('Base', function() {
       }
     });
   });
+
+  describe('Set local path deeper', function () {
+    it ('Set local path to test level1', function () {
+      var ezReq = require('../');
+      ezReq.setLocalRoot('level1', __dirname + '/test-level1');
+      var module = ezReq.localRequire('level1', '/test-level2/my-module2');
+      assert.strictEqual('foooo', module.foo);
+    })
+  });
 });
