@@ -3,8 +3,6 @@ var Root = {
   localDirs: {}
 };
 
-var _= require('underscore');
-
 
 /**
  * Set the root directory.
