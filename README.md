@@ -16,7 +16,7 @@ Counting the directory level will kill you if you have a really deep path.
 This tiny tool may solve your problem, somehow :)
 
 ### Usage
-* Global path: setup your global root directory, then you can require any modules under the foo.
+* Global path: setup your global root directory, then you can require any modules under this directory.
 ```javascript
 var ezReq = require('ez-require');
 ezReq.setGlobalDir(__dirname);
