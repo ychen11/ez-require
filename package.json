@@ -1,6 +1,6 @@
 {
   "name": "ez-require",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight lib for requiring modules easily",
   "author": "yiwei",
   "keywords": [
